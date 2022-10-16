@@ -21,11 +21,24 @@
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
     />
     <!--подключи bootstrap-->
+
+    <!--вот мы ниже подключаем стили css-->
+    <style>
+      .rouded-image {
+        width: 60%;
+        border-radius: 2em;
+        box-shadow: 0 0 10px rgb(0, 0, 10, 0.4);
+        padding: 0.1em;
+        margin-top: 1em;
+        margin-bottom: 1em;
+      }
+    </style>
+    <!--подключаем 'style of CSS'-->
   </head>
 
   <body>
-    <!--первый контейнер нужен для того, чтобы выравнить все содержимое на страничке-->
-    <div class="container text-center">
+    <!--первый контейнер нужен для того, чтобы выравнить все содержимое на страничке ++ здесь есть мод Бута для выравниваня контента по центру. 'my-5'- отступ по оси 'y'. Делается это в rem (это единиа измерения относительно корневого элемента)-->
+    <div class="container text-center my-5">
       <!--второй див нужен для того, чтобы выравнять содержимое в первом контейнере-->
       <div class="row">
         <!--Третий контейнер содержит такой класс 'col-lg-6'. Этот класс необходим чтобы выровнять текст так, как нам нужно. Ширина рассчитывается исходя из родительской ширины. Всего так можно вводить от 1 до 12.Также есть классы 'col-md-1'(он нужен для того, чтобы двигать содержимое для планшетах) и 'col-sm-1'(он нужен для того, чтобы двигать содержимое для телефона). 'mx-auto' - -->
@@ -35,7 +48,7 @@
             <span class="badge text-bg-info fw-light">I'm Aleks</span>
           </h2>
 
-          <img src="/img/бэнтли.jpg" alt="my photo" />
+          <img class="rouded-image" src="/img/бэнтли.jpg" alt="my photo" />
           <p class="text-muted">
             This is my future car Lorem ipsum dolor sit amet, consectetur
             adipisicing elit. Voluptatum ipsa quam provident quisquam?
