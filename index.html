@@ -32,11 +32,42 @@
         margin-top: 1em;
         margin-bottom: 1em;
       }
+      .navbar_style {
+        margin-bottom: -2em;
+      }
     </style>
     <!--подключаем 'style of CSS'-->
   </head>
 
   <body>
+    <!--навигация-->
+    <nav class="navbar navbar-expand-lg bg-light navbar_style">
+      <div class="container">
+        <!-- <a class="navbar-brand" href="#">Navbar</a> -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Favorite places</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
     <!--первый контейнер нужен для того, чтобы выравнить все содержимое на страничке ++ здесь есть мод Бута для выравниваня контента по центру. 'my-5'- отступ по оси 'y'. Делается это в rem (это единиа измерения относительно корневого элемента)-->
     <div class="container text-center my-5 font-monospace">
       <!--второй див нужен для того, чтобы выравнять содержимое в первом контейнере-->
@@ -51,10 +82,11 @@
           </h1>
           <p class="text-muted fw-light fs-5">
             I'm student. I'm 21 old and I from Russia. A very like a programming
-            and in future I will a great busiessman. Lorem ipsum dolor sit amet
-            consectetur, adipisicing elit. Tempore tenetur quis dolor aliquid
-            incidunt sunt ratione ab autem facere fuga deleniti, corrupti
-            voluptatum dolore quae repellendus. Odio nisi velit voluptas!
+            and in future I will a great busiessman. I like peoples, which use
+            Pintrest.Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+            Tempore tenetur quis dolor aliquid incidunt sunt ratione ab autem
+            facere fuga deleniti, corrupti voluptatum dolore quae repellendus.
+            Odio nisi velit voluptas!
           </p>
           <!--тэг ниже является примером того, как можно использовать bootstrap-->
           <a
