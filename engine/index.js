@@ -107,3 +107,39 @@
 // copyObjectA.b = false;
 
 // console.log(objectA.b);
+
+// const copyCopyA = copyObjectA;
+
+// copyCopyA.c = "lol";
+
+// console.log(objectA.c);
+
+// статическая и динамическая типизация
+
+// JS -- это динамически типизированный язык.
+
+// let a = 10;
+
+// a = "lol";
+// a = true;
+
+// a = null;
+
+// console.log(a);
+// все это допустимо для js
+
+// function lol() {
+//   let a = 10;
+//   console.log(a);
+// }
+
+// lol();
+// для того, чтобы не испортить переменную в будущем, нужно использовать const
+
+// const a = () => {
+//   let a = 10;
+//   console.log(a);
+// };
+
+// a();
+// тут юзаем стрелочную функцию. Мы создаем функцию в константе.Мы
