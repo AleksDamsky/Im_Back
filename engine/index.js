@@ -151,21 +151,34 @@
 
 // Точечная запись -- это как для вывода свойства, так и для добавления свойства.
 
-const bigHouse = {
-  flat: 300,
-  people: 600,
-  country: "Russia",
+// const bigHouse = {
+//   flat: 300,
+//   people: 600,
+//   country: "Russia",
+// };
+
+// const copyHouse = bigHouse;
+// copyHouse.color = "red";
+// copyHouse.newObj = {
+//   lol: "kek",
+// };
+
+// console.log(bigHouse);
+
+// //как удалить свойство, которое нам не нужно больше?
+
+// delete bigHouse.country;
+// console.log(bigHouse);
+
+// можно также использовать скобки.использовать == скобочная запись.
+
+const myCity = {
+  city: "Che",
 };
 
-const copyHouse = bigHouse;
-copyHouse.color = "red";
-copyHouse.newObj = {
-  lol: "kek",
-};
+myCity["lol"] = true;
 
-console.log(bigHouse);
+console.log(myCity);
 
-//как удалить свойство, которое нам не нужно больше?
-
-delete bigHouse.country;
-console.log(bigHouse);
+delete myCity.lol;
+console.log(myCity);
