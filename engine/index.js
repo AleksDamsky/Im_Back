@@ -143,3 +143,29 @@
 
 // a();
 // тут юзаем стрелочную функцию. Мы создаем функцию в константе.Мы
+
+/*Объект - это тип перменных с парой ключ: значение.*/
+
+// как выводится;
+// console.log(myCity.city/);
+
+// Точечная запись -- это как для вывода свойства, так и для добавления свойства.
+
+const bigHouse = {
+  flat: 300,
+  people: 600,
+  country: "Russia",
+};
+
+const copyHouse = bigHouse;
+copyHouse.color = "red";
+copyHouse.newObj = {
+  lol: "kek",
+};
+
+console.log(bigHouse);
+
+//как удалить свойство, которое нам не нужно больше?
+
+delete bigHouse.country;
+console.log(bigHouse);
