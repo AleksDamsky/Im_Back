@@ -172,13 +172,27 @@
 
 // можно также использовать скобки.использовать == скобочная запись.
 
-const myCity = {
+// const myCity = {
+//   city: "Che",
+// };
+
+// myCity["lol"] = true;
+
+// console.log(myCity);
+
+// delete myCity.lol;
+// console.log(myCity);
+
+// Что такое вложенность?
+
+const objA = {
   city: "Che",
+  info: {
+    country: "Russia",
+    old: 552,
+  },
 };
 
-myCity["lol"] = true;
+delete objA.info.old;
 
-console.log(myCity);
-
-delete myCity.lol;
-console.log(myCity);
+console.log(objA.info.old);
