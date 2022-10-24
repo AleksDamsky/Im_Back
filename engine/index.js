@@ -185,14 +185,47 @@
 
 // Что такое вложенность?
 
+// const objA = {
+//   city: "Che",
+//   info: {
+//     country: "Russia",
+//     old: 552,
+//   },
+// };
+
+// delete objA.info.old;
+
+// console.log(objA.info.old);
+
+// const objA = {
+//   course: "Anglish",
+//   street: "Ilbecova",
+//   hour: 6,
+// };
+
+// const copyObjA = objA;
+
+// const copyObjA2 = copyObjA;
+
+// copyObjA2.techer = true;
+// copyObjA2.techerName = "Maria";
+
+// console.log(objA);
+
+// copyObjA2.street = "Russia street";
+
+// delete copyObjA2.techerName;
+
+// console.log(objA);
+
+// мы можем использовать созданные перменные, как значения свойств объекта
+
+const a = 12;
+const b = "lol";
+
 const objA = {
-  city: "Che",
-  info: {
-    country: "Russia",
-    old: 552,
-  },
+  old: a,
+  YouSay: b,
 };
 
-delete objA.info.old;
-
-console.log(objA.info.old);
+console.log(objA);
