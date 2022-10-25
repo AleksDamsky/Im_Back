@@ -281,7 +281,27 @@
 
 // JSON.parse(файл сервера перводит в джейсон) ; JSON.stringify(перводит из джейсона в файл для сервера)
 
-const objA = {
-  job: "journal",
-  like: false,
+// const objA = {
+//   job: "journal",
+//   like: false,
+// };
+
+// const a = JSON.stringify(objA);
+
+// Есть два свойства, которыми можно пользоваться при вызове JSONa == parse, stringify
+
+const person = {
+  Name: "Aleks",
+  old: 21,
+  job: "proGorod",
+  greteeng: function () {
+    console.log("say Hello!");
+  },
 };
+
+const a = JSON.stringify(person);
+console.log(a);
+
+const b = JSON.parse(a);
+
+console.log(b);
