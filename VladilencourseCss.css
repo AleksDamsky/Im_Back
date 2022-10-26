@@ -1,0 +1,5 @@
+* {
+  padding: 0; /*контент внутри*/
+  margin: 0; /*отступы вокруг объекта*/
+  box-sizing: border-box;
+}
