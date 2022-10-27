@@ -12,9 +12,26 @@ body {
 .col {
   border: 1px solid white;
   flex: 1;
-  background-color: #ccc;
+  background-color: pink;
   display: flex;
   flex-direction: column; /*располагает элемнт в ряд или колонку -- у меня колонка*/
   justify-content: space-around; /*как располагается вкруг элемента пространство*/
   align-items: center;
+}
+
+.col h2 {
+  padding: 10px;
+  color: #fff;
+  border-radius: 10px;
+  transition: background 0.3s;
+}
+.col h2:hover {
+  background: rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+.col button {
+  border: none; /*уберет рамку*/
+  background: transparent; /*transparent -- устанавливает прозрачный фон элемента*/
+  font-size: 1rem;
 }
