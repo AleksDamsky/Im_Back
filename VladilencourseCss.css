@@ -10,6 +10,11 @@ body {
   display: flex;
 }
 .col {
+  border: 1px solid white;
   flex: 1;
   background-color: #ccc;
+  display: flex;
+  flex-direction: column; /*располагает элемнт в ряд или колонку -- у меня колонка*/
+  justify-content: space-around; /*как располагается вкруг элемента пространство*/
+  align-items: center;
 }
