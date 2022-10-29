@@ -4,14 +4,19 @@
   font-weight: 600;
   font-size: 18px;
   color: black;
+  transition: background 0.5s;
 }
 
 .button:hover {
-  background-color: rgb(212, 165, 126);
+  background-color: rgb(54, 122, 60);
   border-radius: 10px;
 }
 
 .link-course {
-  color: black;
+  color: rgb(0, 0, 0);
   text-decoration: none;
+}
+
+.link-course:hover {
+  color: beige;
 }
