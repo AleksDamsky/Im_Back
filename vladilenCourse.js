@@ -19,13 +19,13 @@ function setRandomColors() {
     col.style.backgroundColor = chroma.random();
     text.textContent = color;
 
-    setTextColors(color, text);
+    // setTextColors(color, text);
   });
 }
 
-function setTextColors(text, color) {
-  const luminance = chroma(color).luminance();
-  text.style.color = luminance > 0.5 ? "black" : "white";
-}
+// function setTextColors(text, color) {
+//   const luminance = chroma(color).luminance();
+//   text.style.color = luminance > 0.5 ? "black" : "white";
+// }
 
 setRandomColors();
