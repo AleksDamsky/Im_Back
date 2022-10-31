@@ -20,3 +20,25 @@ body {
   height: inherit;
   justify-content: center;
 }
+
+.wrapper {
+  background: rgba(79, 82, 36, 0.164);
+  border: 1px solid rgba(50, 185, 163, 0.39);
+  border-radius: 10px;
+  flex-basis: 400px;
+  height: 540px;
+  padding: 20px 35px;
+}
+
+.screen {
+  backdrop-filter: blur(5.5px);
+  -webkit-backdrop-filter: blur(5.5px);
+  background: rgba(255, 255, 255, 0.75);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(35, 35, 35, 0.1);
+  color: black;
+  text-align: right;
+  overflow: auto; /*пределяет, необходимо ли для переполненного блочного элемента содержимое обрезать, предоставить полосы прокрутки или просто отобразить.*/
+  padding: 20px;
+}
