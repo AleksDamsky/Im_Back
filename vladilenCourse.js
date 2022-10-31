@@ -6,26 +6,28 @@ function generationRandomColors() {
   for (let i = 0; i <= 6; i++) {
     colors += hexCodes[Math.floor(Math.random() * hexCodes.length)];
   }
-  return "#" + colors;
+  return "#" + colors.toUpperCase();
 }
 
 // console.log(generationRandomColors());
 
 function setRandomColors() {
   cols.forEach((col) => {
-    const text = document.querySelector("h2");
+    const text = col.querySelector("h2");
+    const button = col.querySelector("button");
     const color = generationRandomColors();
 
-    col.style.backgroundColor = chroma.random();
+    col.style.background = chroma.random();
     text.textContent = color;
 
-    // setTextColors(color, text);
+    // setTextColors(text, color);
+    // setTextColors(button, color);
   });
 }
 
-// function setTextColors(text, color) {
-//   const luminance = chroma(color).luminance();
-//   text.style.color = luminance > 0.5 ? "black" : "white";
-// }
+function setTextColors(text, color) {
+  const luminance = chroma(color).luminance();
+  text.style.color = luminance > 0.5 ? "black" : "white";
+}
 
 setRandomColors();
