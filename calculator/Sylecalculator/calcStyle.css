@@ -10,3 +10,13 @@ html {
   margin: 0;
   box-sizing: inherit;
 }
+
+body {
+  align-items: center;
+  background: linear-gradient(320deg, #eb92be, #ffef78, #63c9b4);
+  display: flex; /*растягивается на все свободное пространство*/
+  font-display: swap; /*я так понял, что это отображение шрифтов в тот момент, когда специально загруженные шрифты не отоюражается при загрузке*/
+  font-size: 30px;
+  height: inherit;
+  justify-content: center;
+}
