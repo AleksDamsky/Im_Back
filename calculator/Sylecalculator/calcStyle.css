@@ -41,4 +41,26 @@ body {
   text-align: right;
   overflow: auto; /*пределяет, необходимо ли для переполненного блочного элемента содержимое обрезать, предоставить полосы прокрутки или просто отобразить.*/
   padding: 20px;
+  width: 326px;
+}
+
+.calc-button-row {
+  display: flex;
+  justify-content: space-between;
+  margin: 5% 10%;
+}
+
+.calc-button {
+  backdrop-filter: blur(1.5px);
+  -webkit-backdrop-filter: blur(1.5px);
+  border: 1px solid black;
+  border-radius: 20px;
+  flex-basis: 20%;
+  font-size: 24px;
+  padding: 10px 10px;
+}
+
+.calc-button:last-child {
+  color: #83f500;
+  background: rgba(255, 10, 10, 0.658);
 }
