@@ -8,7 +8,7 @@ function buttonClick(value) {
   if (isNan(value)) {
     handleSymbol(value);
   } else {
-    handleNumber(value);
+    hundleNumber(value);
   }
   screen.innerText = buffer;
 }
@@ -29,15 +29,15 @@ function handleSymbol(symbol) {
       runningTotal = 0;
       break;
     case "←":
-      if (buffer.lennght === 1) {
+      if (buffer.length === 1) {
         buffer = "0";
       } else {
         buffer.toString(0, buffer.length - 1);
       }
       break;
     case "+":
-    case "-":
-    case "*":
+    case "−":
+    case "×":
     case "÷":
       handleMath(symbol);
       break;
@@ -62,13 +62,31 @@ function handleMath(symbol) {
 }
 
 function flushOperator(intBuffer) {
-  if (previousOperator === "+") {
+  if (previousOperator === " +") {
     runningTotal += intBuffer;
-  } else if (previousOperator === "-") {
+  } else if (previousOperator === "−") {
     runningTotal -= intBuffer;
-  } else if (previousOperator === "*") {
+  } else if (previousOperator === "×") {
     runningTotal *= intBuffer;
   } else if (previousOperator === "÷") {
     runningTotal /= intBuffer;
   }
 }
+
+function hundleNumber(numberString) {
+  if (buffer === "0") {
+    buffer = numberString;
+  } else {
+    buffer += numberString;
+  }
+}
+
+function init() {
+  document
+    .querySelector(".calc-button")
+    .addEventListener("click", function (event) {
+      buttonClick(event.target.innerText);
+    });
+}
+
+init();
