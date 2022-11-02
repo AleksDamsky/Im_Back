@@ -23,11 +23,52 @@ function handleSymbol(symbol) {
       if (previousOperator === null) {
         return;
       }
-      flushOperator(parseInt(buffer));
+      flushOperator(parseInt(buffer)); //что такое parseInt? Это функция, которая из строки возвращает целые числа
       previousOperator = null;
       buffer = runningTotal;
       runningTotal = 0;
       break;
-    // case "←"
+    case "←":
+      if (buffer.lennght === 1) {
+        buffer = "0";
+      } else {
+        buffer.toString(0, buffer.length - 1);
+      }
+      break;
+    case "+":
+    case "-":
+    case "*":
+    case "÷":
+      handleMath(symbol);
+      break;
+  }
+}
+
+function handleMath(symbol) {
+  if (buffer === "0") {
+    return;
+  }
+
+  const intBuffer = parseInt(buffer);
+
+  if (runningTotal === 0) {
+    runningTotal = intBuffer;
+  } else {
+    flushOperator(intBuffer);
+  }
+
+  previousOperator = symbol;
+  buffer = "0";
+}
+
+function flushOperator(intBuffer) {
+  if (previousOperator === "+") {
+    runningTotal += intBuffer;
+  } else if (previousOperator === "-") {
+    runningTotal -= intBuffer;
+  } else if (previousOperator === "*") {
+    runningTotal *= intBuffer;
+  } else if (previousOperator === "÷") {
+    runningTotal /= intBuffer;
   }
 }
