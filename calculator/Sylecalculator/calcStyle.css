@@ -79,5 +79,9 @@ body {
 }
 
 .double {
-  flex-basis: 120px;
+  flex-basis: 43%;
+}
+
+.triple {
+  flex-basis: 63%;
 }
