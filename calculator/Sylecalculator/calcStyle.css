@@ -64,3 +64,20 @@ body {
   color: #83f500;
   background: rgba(255, 10, 10, 0.658);
 }
+
+.calc-button:last-child:hover {
+  background-color: inherit;
+  color: inherit;
+}
+
+.calc-button:hover {
+  background-color: inherit;
+}
+
+.calc-button:active {
+  color: rgba(162, 196, 13, 0.658);
+}
+
+.double {
+  flex-basis: 120px;
+}
