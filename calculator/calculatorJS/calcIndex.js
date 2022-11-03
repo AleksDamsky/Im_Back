@@ -10,7 +10,7 @@ function buttonClick(value) {
   } else {
     hundleNumber(value);
   }
-  screen.innerText = buffer;
+  screen.innerText = buffer; //эта строка у нас считывает цифры, написанные в буфере
 }
 
 function handleSymbol(symbol) {
