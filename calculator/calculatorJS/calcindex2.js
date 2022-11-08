@@ -1,5 +1,8 @@
 const btn = document.querySelector(".calc-buttons");
+const Scren = document.querySelector(".screen");
+
+let container = btn.value;
 
 btn.addEventListener("click", () => {
-  console.log("hello");
+  Scren.innerHTML = container;
 });
